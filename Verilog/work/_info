@@ -1,0 +1,195 @@
+m255
+K3
+z0
+13
+cModel Technology
+d/home/sekharb/Code/chris-420
+valu
+Z0 !s110 1438036844
+!i10b 1
+!s100 NE0Ylz2Xh=J;BgTNB97Hg2
+I?jA9TS^ihHEGOgE^TKa[b1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Dropbox/ECE 429 Lab/Final/chris-420
+w1437961544
+8D:/Dropbox/ECE 429 Lab/Final/chris-420/alu.v
+FD:/Dropbox/ECE 429 Lab/Final/chris-420/alu.v
+L0 8
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1438036844.000000
+!s107 D:/Dropbox/ECE 429 Lab/Final/chris-420/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Dropbox/ECE 429 Lab/Final/chris-420/alu.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vdecode
+R0
+!i10b 1
+!s100 DP?4g>IP]CZdUKb95TYhP2
+ImdGd:1l]<g`bX=0Zf;CHD0
+R1
+R2
+w1437964016
+8D:/Dropbox/ECE 429 Lab/Final/chris-420/decode.v
+FD:/Dropbox/ECE 429 Lab/Final/chris-420/decode.v
+L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Dropbox/ECE 429 Lab/Final/chris-420/decode.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Dropbox/ECE 429 Lab/Final/chris-420/decode.v|
+!s101 -O0
+!i113 1
+R5
+vexecute
+R0
+!i10b 1
+!s100 Un2VGMM5FM]9=bT9F7FWe0
+I9JHJf0T6h02LZ8jRT6d8K1
+R1
+R2
+w1437966520
+8D:/Dropbox/ECE 429 Lab/Final/chris-420/execute.v
+FD:/Dropbox/ECE 429 Lab/Final/chris-420/execute.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Dropbox/ECE 429 Lab/Final/chris-420/execute.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Dropbox/ECE 429 Lab/Final/chris-420/execute.v|
+!s101 -O0
+!i113 1
+R5
+vfetch
+R0
+!i10b 1
+!s100 JL6?cBAo;XPLzUPGVE<JI1
+IOZD0DaUBn8jDVmN84oeKb2
+R1
+R2
+w1437966640
+8D:/Dropbox/ECE 429 Lab/Final/chris-420/fetch.v
+FD:/Dropbox/ECE 429 Lab/Final/chris-420/fetch.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Dropbox/ECE 429 Lab/Final/chris-420/fetch.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Dropbox/ECE 429 Lab/Final/chris-420/fetch.v|
+!s101 -O0
+!i113 1
+R5
+vloadstore
+R0
+!i10b 1
+!s100 5ZVdG06BA<P4];4_HaK6>2
+I<_ESWSgf[63XFhUfmGSiM0
+R1
+R2
+w1438033458
+8D:/Dropbox/ECE 429 Lab/Final/chris-420/loadstore.v
+FD:/Dropbox/ECE 429 Lab/Final/chris-420/loadstore.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Dropbox/ECE 429 Lab/Final/chris-420/loadstore.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Dropbox/ECE 429 Lab/Final/chris-420/loadstore.v|
+!s101 -O0
+!i113 1
+R5
+vmainmemory
+R0
+!i10b 1
+!s100 0YafCHIjeFR1>@d;G8[C33
+IOOU^EQ1aQ>Pe>8m=4Z`IC2
+R1
+R2
+w1437967308
+8D:/Dropbox/ECE 429 Lab/Final/chris-420/mainmemory.v
+FD:/Dropbox/ECE 429 Lab/Final/chris-420/mainmemory.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Dropbox/ECE 429 Lab/Final/chris-420/mainmemory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Dropbox/ECE 429 Lab/Final/chris-420/mainmemory.v|
+!s101 -O0
+!i113 1
+R5
+vpd3_tb
+R0
+!i10b 1
+!s100 _3d_iC92f^P39]Xf2XQhk1
+I3OPn:0b[9F^H5GMiFG1XC2
+R1
+R2
+w1438036841
+8D:/Dropbox/ECE 429 Lab/Final/chris-420/pd3_tb.v
+FD:/Dropbox/ECE 429 Lab/Final/chris-420/pd3_tb.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Dropbox/ECE 429 Lab/Final/chris-420/pd3_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Dropbox/ECE 429 Lab/Final/chris-420/pd3_tb.v|
+!s101 -O0
+!i113 1
+R5
+vregisterfile
+R0
+!i10b 1
+!s100 HbJEL0^dzz5=b1iiMH5IW0
+I;n@n:bW^NI2U>A1FbURhz1
+R1
+R2
+w1437967460
+8D:/Dropbox/ECE 429 Lab/Final/chris-420/registerfile.v
+FD:/Dropbox/ECE 429 Lab/Final/chris-420/registerfile.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Dropbox/ECE 429 Lab/Final/chris-420/registerfile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Dropbox/ECE 429 Lab/Final/chris-420/registerfile.v|
+!s101 -O0
+!i113 1
+R5
+vwriteback
+R0
+!i10b 1
+!s100 IH=C=41ll>oC]=hMch_0>1
+ID4kSo^9U7D>[E:V5FO61J0
+R1
+R2
+w1437967792
+8D:/Dropbox/ECE 429 Lab/Final/chris-420/writeback.v
+FD:/Dropbox/ECE 429 Lab/Final/chris-420/writeback.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Dropbox/ECE 429 Lab/Final/chris-420/writeback.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Dropbox/ECE 429 Lab/Final/chris-420/writeback.v|
+!s101 -O0
+!i113 1
+R5

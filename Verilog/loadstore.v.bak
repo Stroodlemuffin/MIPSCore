@@ -1,0 +1,96 @@
+/*
+	File:		loadstore.v
+	Authour(s):	Chris Thiele, Caleb Amlesom
+	Student ID:	cwthiele, camlesom
+	Date: 		July 20, 2015
+*/
+module loadstore (
+  /* INPUTS */
+  input wire clk,
+  input wire [31:0] pc,
+  input wire [31:0] insn,
+  input wire [13:0] controls,
+  input wire [31:0] O,
+  input wire [31:0] B,
+  
+  /* OUTPUTS */
+  output wire [31:0] pc_out,
+  output wire [31:0] insn_out,
+  output wire [13:0] controls_out,
+  output wire [31:0] O_out,
+  output wire [31:0] D_out,
+
+  /* BYPASS */
+  input wire WM_bypass,
+  input wire [31:0] WM_B_bypass
+);
+  /* STORE/LOAD OP CODES */)
+  parameter LB = 6'b100000;
+  parameter LBU = 6'b100100;
+  parameter LH = 6'b100001;
+  parameter LHU = 6'b100101;
+  parameter LW = 6'b100011;
+  parameter SB = 6'b101000;
+  parameter SH = 6'b101001;
+  parameter SW = 6'b101011;
+
+  wire rwe;
+  wire aluinb;
+  wire dmwe;
+  wire rwd;
+  wire jp;
+  wire br;
+  wire [5:0] aluop;
+
+  wire busy;
+  wire read_write;
+  reg [1:0] access_size;
+  wire [31:0] data_in;
+  
+  assign pc_out = pc;
+  assign insn_out = insn;
+  assign controls_out = controls;
+  assign O_out = O;
+
+  /* CONTROL BITS */
+  assign rdst = controls [13];
+  assign dmenable = controls[12];
+  assign rwe = controls[11];
+  assign aluinb = controls[10];
+  assign dmwe = controls[9];
+  assign rwd = controls[8];
+  assign jp = controls[7];
+  assign br = controls[6];
+  assign aluop = controls[5:0];
+
+  assign read_write = ~dmwe;
+  assign data_in = WM_bypass ? WM_B_bypass : B;
+
+  // Data Memory
+	mainmemory data_mem_module(
+		.clk (clk),
+		.busy (busy),
+		.enable (dmenable),
+		.read_write(read_write),
+		.address_in (O),
+		.access_size (access_size),
+		.data_in (data_in),
+		.data_out (D_out)
+	);
+
+  /* Change access_size based on memory opcode type (byte, halfword, word) */
+  always @ (insn) begin
+    case(insn[31:26]) 
+      LB: access_size <= 2'b0;
+      LBU: access_size <= 2'b0;
+      LH: access_size <= 2'b01;
+      LHU: access_size <= 2'b01;
+      LW: access_size <= 2'b10;
+      SB: access_size <= 2'b0;
+      SH: access_size <= 2'b01;
+      SW: access_size <= 2'b10;
+      default: access_size <= 2'b0;
+    endcase
+  end       
+
+endmodule

@@ -1,0 +1,10 @@
+
+XM_rd = XM_controls_rdst ? XM_insn[15:11] : XM_insn[20:16]
+MX_abypass = XM_controls_rwe & (DX_insn[25:21] == XM_rd)
+MX_bbypass = XM_controls_rwe & ~DX_aluinb & (DX_insn[20:16] == XM_rd)
+MX_bypassval = XM_O;
+
+MW_rd = WM_controls_rdst ? MW_insn[15:11] : MW_insn[20:16]
+WX_abypass = MW_controls_rwe & (DX_insn[25:21] == MW_rd)
+WX_bbypass = MW_controls_rwe & ~DX_aluinb & (DX_insn[20:16] == MW_rd)
+WX_bypassval = (MW_controls_dmenable & ~MW_controls_dmwe) ? MW_D : MW_O
